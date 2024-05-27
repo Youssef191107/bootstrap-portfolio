@@ -1,0 +1,110 @@
+:root{
+    --white-color:white;
+    --main-color:#ff206e;
+}
+
+
+
+#home{
+    background-image: url(/images/bg_osaka.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+#home a{
+    color:var(--main-color);
+    text-decoration: none;
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border-color: rgba(225,225, 225, 0.3) !important;
+    transition: all 1s;
+}
+.icon:hover{
+    border-color: var(--white-color) !important;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--main-color);
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: var(--white-color);
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+}
+
+/* S T A R T   A B O U T     S E C T I O N */
+
+#about{
+    background-image: url(images/light_dot.jpg);
+}
+.about-p{
+    color: var(--main-color);
+}
+
+/* E N D   A B O U T    S E C T I O N */
+
+
+
+.section-tittle h2{
+    color: #f1f1f1;
+    font-size: 5rem;
+    letter-spacing: 20px;
+    font-weight: 900;
+}
+
+/* S T A R T     S E R V I C E S               S E C T I O N */
+#services{
+background-image: url(images/dark_dot.jpg);
+}
+.item h3::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 1s;
+
+}
+#services .item:hover h3::after{
+    width: 45%;
+   
+}
+#services i{
+    transition: all 1s;
+}
+#services .item:hover i{
+    color: var(--main-color);
+}
+
+/* E N D     S E R V I C E S     S E C T I O N */
+
+/* S T A R T      T E S T M O I N L    S E C T I O N */
+
+.carousel-indicators [data-bs-target] {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-indent: 0;
+}
+
+
+/* E N D    T E S T M O I N L      S E C T I O N */
+
+
+.nav-tabs {
+    border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+     border: none;
+     color: var(--main-color);
+}
+.nav-tabs .nav-link {
+    border: none;
+    color: gray;
+}
